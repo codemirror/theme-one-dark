@@ -1,8 +1,8 @@
-# @codemirror/theme-one-dark
+# @codemirror/theme-one-dark [![NPM version](https://img.shields.io/npm/v/@codemirror/theme-one-dark.svg)](https://www.npmjs.org/package/@codemirror/theme-one-dark)
 
-[ [![NPM version](https://img.shields.io/npm/v/@codemirror/next.svg)](https://www.npmjs.org/package/@codemirror/theme-one-dark) | [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/theme-one-dark/blob/main/CHANGELOG.md) ]
+[ [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/theme-one-dark/blob/main/CHANGELOG.md) ]
 
-This package implements One Dark theme for the
+This package implements the One Dark theme for the
 [CodeMirror](https://codemirror.net/6/) code editor.
 
 The [project page](https://codemirror.net/6/) has more information, a
