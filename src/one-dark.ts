@@ -1,6 +1,6 @@
-import {EditorView} from "@codemirror/next/view"
-import {Extension} from "@codemirror/next/state"
-import {HighlightStyle, tags as t} from "@codemirror/next/highlight"
+import {EditorView} from "@codemirror/view"
+import {Extension} from "@codemirror/state"
+import {HighlightStyle, tags as t} from "@codemirror/highlight"
 
 const chalky = "#e5c07b",
   coral = "#e06c75",
