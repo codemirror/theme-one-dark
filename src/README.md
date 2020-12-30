@@ -20,21 +20,9 @@ conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
 ## API Reference
-<dl>
-<dt id="user-content-onedark">
-  <code><strong><a href="#user-content-onedark">oneDark</a></strong>: <a href="https://codemirror.net/6/docs/ref#state.Extension">Extension</a></code></dt>
 
-<dd><p>Extension to enable the One Dark theme (both the editor theme and
-the highlight style).</p>
-</dd>
-<dt id="user-content-onedarktheme">
-  <code><strong><a href="#user-content-onedarktheme">oneDarkTheme</a></strong>: <a href="https://codemirror.net/6/docs/ref#state.Extension">Extension</a></code></dt>
+@oneDark
 
-<dd><p>The editor theme styles for One Dark.</p>
-</dd>
-<dt id="user-content-onedarkhighlightstyle">
-  <code><strong><a href="#user-content-onedarkhighlightstyle">oneDarkHighlightStyle</a></strong>: <a href="https://codemirror.net/6/docs/ref#highlight.HighlightStyle">HighlightStyle</a></code></dt>
+@oneDarkTheme
 
-<dd><p>The highlighting style for code in the One Dark theme.</p>
-</dd>
-</dl>
+@oneDarkHighlightStyle
