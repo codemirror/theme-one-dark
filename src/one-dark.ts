@@ -66,7 +66,10 @@ export const oneDarkTheme = EditorView.theme({
     backgroundColor: "#606862"
   },
   "$tooltip.autocomplete": {
-    "& > ul > li[aria-selected]": {backgroundColor: background}
+    "& > ul > li[aria-selected]": {
+      backgroundColor: background,
+      color: ivory
+    }
   }
 }, {dark: true})
 
