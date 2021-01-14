@@ -1,3 +1,9 @@
+## 0.17.3 (2021-01-14)
+
+### Bug fixes
+
+Make the selection background grey, rather than dark green.
+
 ## 0.17.2 (2021-01-06)
 
 ### New features
