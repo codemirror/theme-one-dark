@@ -13,7 +13,7 @@ const chalky = "#e5c07b",
   whiskey = "#d19a66",
   violet = "#c678dd",
   background = "#282c34",
-  selection = "#405948",
+  selection = "#3E4451",
   cursor = "#528bff"
 
 /// The editor theme styles for One Dark.
