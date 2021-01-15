@@ -56,7 +56,7 @@ export const oneDarkTheme = EditorView.theme({
   "$gutterElement.lineNumber": {color: "inherit"},
 
   $foldPlaceholder: {
-    backgroundColor: "none",
+    backgroundColor: "transparent",
     border: "none",
     color: "#ddd"
   },
