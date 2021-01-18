@@ -2,6 +2,8 @@ import {EditorView} from "@codemirror/view"
 import {Extension} from "@codemirror/state"
 import {HighlightStyle, tags as t} from "@codemirror/highlight"
 
+// Using https://github.com/one-dark/vscode-one-dark-theme/ as reference for the colors
+
 const chalky = "#e5c07b",
   coral = "#e06c75",
   cyan = "#56b6c2",
@@ -12,6 +14,8 @@ const chalky = "#e5c07b",
   sage = "#98c379",
   whiskey = "#d19a66",
   violet = "#c678dd",
+  darkBackground = "#21252b",
+  highlightBackground = "#2c313a",
   background = "#282c34",
   selection = "#3E4451",
   cursor = "#528bff"
@@ -28,7 +32,7 @@ export const oneDarkTheme = EditorView.theme({
   "$$focused $cursor": {borderLeftColor: cursor},
   "$$focused $selectionBackground": {backgroundColor: selection},
 
-  $panels: {backgroundColor: background, color: ivory},
+  $panels: {backgroundColor: darkBackground, color: ivory},
   "$panels.top": {borderBottom: "2px solid black"},
   "$panels.bottom": {borderTop: "2px solid black"},
 
@@ -40,7 +44,7 @@ export const oneDarkTheme = EditorView.theme({
     backgroundColor: "#6199ff2f"
   },
 
-  $activeLine: {backgroundColor: "#2c313c"},
+  $activeLine: {backgroundColor: highlightBackground},
   $selectionMatch: {backgroundColor: "#aafe661a"},
 
   "$matchingBracket, $nonmatchingBracket": {
@@ -63,11 +67,11 @@ export const oneDarkTheme = EditorView.theme({
 
   $tooltip: {
     border: "1px solid #181a1f",
-    backgroundColor: "#606862"
+    backgroundColor: darkBackground
   },
   "$tooltip.autocomplete": {
     "& > ul > li[aria-selected]": {
-      backgroundColor: background,
+      backgroundColor: highlightBackground,
       color: ivory
     }
   }
