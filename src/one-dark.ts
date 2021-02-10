@@ -9,7 +9,7 @@ const chalky = "#e5c07b",
   cyan = "#56b6c2",
   invalid = "#ffffff",
   ivory = "#abb2bf",
-  stone = "#5c6370",
+  stone = "#7d8799", // Brightened compared to original to increase contrast
   malibu = "#61afef",
   sage = "#98c379",
   whiskey = "#d19a66",
@@ -30,7 +30,7 @@ export const oneDarkTheme = EditorView.theme({
   },
 
   "$$focused $cursor": {borderLeftColor: cursor},
-  "$$focused $selectionBackground": {backgroundColor: selection},
+  "$$focused $selectionBackground, $selectionBackground": {backgroundColor: selection},
 
   $panels: {backgroundColor: darkBackground, color: ivory},
   "$panels.top": {borderBottom: "2px solid black"},
@@ -54,7 +54,7 @@ export const oneDarkTheme = EditorView.theme({
 
   $gutters: {
     backgroundColor: background,
-    color: "#545868",
+    color: stone,
     border: "none"
   },
   "$gutterElement.lineNumber": {color: "inherit"},
@@ -83,8 +83,6 @@ export const oneDarkHighlightStyle = HighlightStyle.define(
    color: violet},
   {tag: [t.name, t.deleted, t.character, t.propertyName, t.macroName],
    color: coral},
-  {tag: [t.processingInstruction, t.string, t.inserted],
-   color: sage},
   {tag: [t.function(t.variableName), t.labelName],
    color: malibu},
   {tag: [t.color, t.constant(t.name), t.standard(t.name)],
@@ -109,6 +107,8 @@ export const oneDarkHighlightStyle = HighlightStyle.define(
    color: coral},
   {tag: [t.atom, t.bool, t.special(t.variableName)],
    color: whiskey },
+  {tag: [t.processingInstruction, t.string, t.inserted],
+   color: sage},
   {tag: t.invalid,
    color: invalid},
 )
