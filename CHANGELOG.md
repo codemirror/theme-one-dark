@@ -1,3 +1,9 @@
+## 0.17.5 (2021-02-10)
+
+### Bug fixes
+
+Increase contrast on the color used for comments and links.
+
 ## 0.17.4 (2021-01-18)
 
 ### Bug fixes
