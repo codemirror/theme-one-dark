@@ -22,54 +22,54 @@ const chalky = "#e5c07b",
 
 /// The editor theme styles for One Dark.
 export const oneDarkTheme = EditorView.theme({
-  $: {
+  "&": {
     color: ivory,
     backgroundColor: background,
     "& ::selection": {backgroundColor: selection},
     caretColor: cursor
   },
 
-  "$$focused $cursor": {borderLeftColor: cursor},
-  "$$focused $selectionBackground, $selectionBackground": {backgroundColor: selection},
+  "&.cm-focused .cm-cursor": {borderLeftColor: cursor},
+  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground": {backgroundColor: selection},
 
-  $panels: {backgroundColor: darkBackground, color: ivory},
-  "$panels.top": {borderBottom: "2px solid black"},
-  "$panels.bottom": {borderTop: "2px solid black"},
+  ".cm-panels": {backgroundColor: darkBackground, color: ivory},
+  ".cm-panels.cm-panels-top": {borderBottom: "2px solid black"},
+  ".cm-panels.cm-panels-bottom": {borderTop: "2px solid black"},
 
-  $searchMatch: {
+  ".cm-searchMatch": {
     backgroundColor: "#72a1ff59",
     outline: "1px solid #457dff"
   },
-  "$searchMatch.selected": {
+  ".cm-searchMatch.cm-searchMatch-selected": {
     backgroundColor: "#6199ff2f"
   },
 
-  $activeLine: {backgroundColor: highlightBackground},
-  $selectionMatch: {backgroundColor: "#aafe661a"},
+  ".cm-activeLine": {backgroundColor: highlightBackground},
+  ".cm-selectionMatch": {backgroundColor: "#aafe661a"},
 
-  "$matchingBracket, $nonmatchingBracket": {
+  ".cm-matchingBracket, .cm-nonmatchingBracket": {
     backgroundColor: "#bad0f847",
     outline: "1px solid #515a6b"
   },
 
-  $gutters: {
+  ".cm-gutters": {
     backgroundColor: background,
     color: stone,
     border: "none"
   },
-  "$gutterElement.lineNumber": {color: "inherit"},
+  ".cm-lineNumbers .cm-gutterElement": {color: "inherit"},
 
-  $foldPlaceholder: {
+  ".cm-foldPlaceholder": {
     backgroundColor: "transparent",
     border: "none",
     color: "#ddd"
   },
 
-  $tooltip: {
+  ".cm-tooltip": {
     border: "1px solid #181a1f",
     backgroundColor: darkBackground
   },
-  "$tooltip.autocomplete": {
+  ".cm-tooltip-autocomplete": {
     "& > ul > li[aria-selected]": {
       backgroundColor: highlightBackground,
       color: ivory
@@ -78,7 +78,7 @@ export const oneDarkTheme = EditorView.theme({
 }, {dark: true})
 
 /// The highlighting style for code in the One Dark theme.
-export const oneDarkHighlightStyle = HighlightStyle.define(
+export const oneDarkHighlightStyle = HighlightStyle.define([
   {tag: t.keyword,
    color: violet},
   {tag: [t.name, t.deleted, t.character, t.propertyName, t.macroName],
@@ -111,7 +111,7 @@ export const oneDarkHighlightStyle = HighlightStyle.define(
    color: sage},
   {tag: t.invalid,
    color: invalid},
-)
+])
 
 /// Extension to enable the One Dark theme (both the editor theme and
 /// the highlight style).
