@@ -24,13 +24,15 @@ const chalky = "#e5c07b",
 export const oneDarkTheme = EditorView.theme({
   "&": {
     color: ivory,
-    backgroundColor: background,
-    "& ::selection": {backgroundColor: selection},
+    backgroundColor: background
+  },
+
+  ".cm-content": {
     caretColor: cursor
   },
 
   "&.cm-focused .cm-cursor": {borderLeftColor: cursor},
-  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground": {backgroundColor: selection},
+  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground, ::selection": {backgroundColor: selection},
 
   ".cm-panels": {backgroundColor: darkBackground, color: ivory},
   ".cm-panels.cm-panels-top": {borderBottom: "2px solid black"},
@@ -57,7 +59,6 @@ export const oneDarkTheme = EditorView.theme({
     color: stone,
     border: "none"
   },
-  ".cm-lineNumbers .cm-gutterElement": {color: "inherit"},
 
   ".cm-foldPlaceholder": {
     backgroundColor: "transparent",
