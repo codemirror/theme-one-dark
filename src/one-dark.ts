@@ -60,6 +60,10 @@ export const oneDarkTheme = EditorView.theme({
     border: "none"
   },
 
+  ".cm-activeLineGutter": {
+    backgroundColor: highlightBackground
+  },
+
   ".cm-foldPlaceholder": {
     backgroundColor: "transparent",
     border: "none",
