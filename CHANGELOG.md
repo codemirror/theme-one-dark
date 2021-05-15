@@ -1,3 +1,9 @@
+## 0.18.1 (2021-05-15)
+
+### Bug fixes
+
+Include styling for the active line gutter.
+
 ## 0.18.0 (2021-03-03)
 
 ### Breaking changes
