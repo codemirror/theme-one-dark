@@ -104,6 +104,8 @@ export const oneDarkHighlightStyle = HighlightStyle.define([
    fontWeight: "bold"},
   {tag: t.emphasis,
    fontStyle: "italic"},
+  {tag: t.strikethrough,
+   textDecoration: "line-through"},
   {tag: t.link,
    color: stone,
    textDecoration: "underline"},
