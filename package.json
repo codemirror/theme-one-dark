@@ -1,6 +1,6 @@
 {
   "name": "@codemirror/theme-one-dark",
-  "version": "0.18.1",
+  "version": "0.19.0",
   "description": "One Dark theme for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
@@ -26,9 +26,9 @@
   "sideEffects": false,
   "license": "MIT",
   "dependencies": {
-    "@codemirror/highlight": "^0.18.0",
-    "@codemirror/state": "^0.18.0",
-    "@codemirror/view": "^0.18.0"
+    "@codemirror/highlight": "^0.19.0",
+    "@codemirror/state": "^0.19.0",
+    "@codemirror/view": "^0.19.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.0"
