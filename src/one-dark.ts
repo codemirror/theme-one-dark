@@ -32,7 +32,7 @@ export const oneDarkTheme = EditorView.theme({
   },
 
   "&.cm-focused .cm-cursor": {borderLeftColor: cursor},
-  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground, ::selection": {backgroundColor: selection},
+  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection": {backgroundColor: selection},
 
   ".cm-panels": {backgroundColor: darkBackground, color: ivory},
   ".cm-panels.cm-panels-top": {borderBottom: "2px solid black"},
