@@ -74,6 +74,14 @@ export const oneDarkTheme = EditorView.theme({
     border: "1px solid #181a1f",
     backgroundColor: darkBackground
   },
+  ".cm-tooltip.cm-tooltip-arrow:before": {
+    borderTopColor: darkBackground,
+    borderBottomColor: darkBackground
+  },
+  ".cm-tooltip.cm-tooltip-arrow:after": {
+    borderTopColor: "#181a1f",
+    borderBottomColor: "#181a1f"
+  },
   ".cm-tooltip-autocomplete": {
     "& > ul > li[aria-selected]": {
       backgroundColor: highlightBackground,
