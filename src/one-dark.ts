@@ -17,6 +17,7 @@ const chalky = "#e5c07b",
   darkBackground = "#21252b",
   highlightBackground = "#2c313a",
   background = "#282c34",
+  tooltipBackground = "#353a42",
   selection = "#3E4451",
   cursor = "#528bff"
 
@@ -71,16 +72,16 @@ export const oneDarkTheme = EditorView.theme({
   },
 
   ".cm-tooltip": {
-    border: "1px solid #181a1f",
-    backgroundColor: darkBackground
+    border: "none",
+    backgroundColor: tooltipBackground
   },
-  ".cm-tooltip.cm-tooltip-arrow:before": {
-    borderTopColor: darkBackground,
-    borderBottomColor: darkBackground
+  ".cm-tooltip .cm-tooltip-arrow:before": {
+    borderTopColor: "transparent",
+    borderBottomColor: "transparent"
   },
-  ".cm-tooltip.cm-tooltip-arrow:after": {
-    borderTopColor: "#181a1f",
-    borderBottomColor: "#181a1f"
+  ".cm-tooltip .cm-tooltip-arrow:after": {
+    borderTopColor: tooltipBackground,
+    borderBottomColor: tooltipBackground
   },
   ".cm-tooltip-autocomplete": {
     "& > ul > li[aria-selected]": {
