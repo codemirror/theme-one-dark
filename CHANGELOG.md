@@ -1,3 +1,9 @@
+## 0.19.1 (2021-11-06)
+
+### Bug fixes
+
+Give tooltips a somewhat lighter background so that they don't blend into the editor background.
+
 ## 0.19.0 (2021-08-11)
 
 ### Breaking changes
