@@ -29,7 +29,8 @@ export const oneDarkTheme = EditorView.theme({
   },
 
   ".cm-content": {
-    caretColor: cursor
+    caretColor: cursor,
+    backgroundColor: background
   },
 
   ".cm-cursor, .cm-dropCursor": {borderLeftColor: cursor},
