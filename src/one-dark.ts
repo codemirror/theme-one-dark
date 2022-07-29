@@ -5,89 +5,89 @@ import {tags as t} from "@lezer/highlight"
 
 // Using https://github.com/one-dark/vscode-one-dark-theme/ as reference for the colors
 
-const chalky = "#e5c07b",
-  coral = "#e06c75",
-  cyan = "#56b6c2",
-  invalid = "#ffffff",
-  ivory = "#abb2bf",
-  stone = "#7d8799", // Brightened compared to original to increase contrast
-  malibu = "#61afef",
-  sage = "#98c379",
-  whiskey = "#d19a66",
-  violet = "#c678dd",
-  darkBackground = "#21252b",
-  highlightBackground = "#2c313a",
-  background = "#282c34",
-  tooltipBackground = "#353a42",
-  selection = "#3E4451",
-  cursor = "#528bff"
+export const oneDarkChalky = "#e5c07b"
+export const oneDarkCoral = "#e06c75"
+export const oneDarkCyan = "#56b6c2"
+export const oneDarkInvalid = "#ffffff"
+export const oneDarkIvory = "#abb2bf"
+export const oneDarkStone = "#7d8799" // Brightened compared to original to increase contrast
+export const oneDarkMalibu = "#61afef"
+export const oneDarkSage = "#98c379"
+export const oneDarkWhiskey = "#d19a66"
+export const oneDarkViolet = "#c678dd"
+export const oneDarkDarkBackground = "#21252b"
+export const oneDarkHighlightBackground = "#2c313a"
+export const oneDarkBackground = "#282c34"
+export const oneDarkTooltipBackground = "#353a42"
+export const oneDarkSelection = "#3E4451"
+export const oneDarkCursor = "#528bff"
 
 /// The editor theme styles for One Dark.
 export const oneDarkTheme = EditorView.theme({
   "&": {
-    color: ivory,
-    backgroundColor: background
+    color: oneDarkIvory,
+    oneDarkBackgroundColor: oneDarkBackground
   },
 
   ".cm-content": {
-    caretColor: cursor
+    caretColor: oneDarkCursor
   },
 
-  ".cm-cursor, .cm-dropCursor": {borderLeftColor: cursor},
-  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection": {backgroundColor: selection},
+  ".cm-oneDarkCursor, .cm-dropCursor": {borderLeftColor: oneDarkCursor},
+  "&.cm-focused .cm-oneDarkSelectionBackground, .cm-oneDarkSelectionBackground, .cm-content ::oneDarkSelection": {oneDarkBackgroundColor: oneDarkSelection},
 
-  ".cm-panels": {backgroundColor: darkBackground, color: ivory},
+  ".cm-panels": {oneDarkBackgroundColor: oneDarkDarkBackground, color: oneDarkIvory},
   ".cm-panels.cm-panels-top": {borderBottom: "2px solid black"},
   ".cm-panels.cm-panels-bottom": {borderTop: "2px solid black"},
 
   ".cm-searchMatch": {
-    backgroundColor: "#72a1ff59",
+    oneDarkBackgroundColor: "#72a1ff59",
     outline: "1px solid #457dff"
   },
   ".cm-searchMatch.cm-searchMatch-selected": {
-    backgroundColor: "#6199ff2f"
+    oneDarkBackgroundColor: "#6199ff2f"
   },
 
-  ".cm-activeLine": {backgroundColor: highlightBackground},
-  ".cm-selectionMatch": {backgroundColor: "#aafe661a"},
+  ".cm-activeLine": {oneDarkBackgroundColor: oneDarkHighlightBackground},
+  ".cm-oneDarkSelectionMatch": {oneDarkBackgroundColor: "#aafe661a"},
 
   "&.cm-focused .cm-matchingBracket, &.cm-focused .cm-nonmatchingBracket": {
-    backgroundColor: "#bad0f847",
+    oneDarkBackgroundColor: "#bad0f847",
     outline: "1px solid #515a6b"
   },
 
   ".cm-gutters": {
-    backgroundColor: background,
-    color: stone,
+    oneDarkBackgroundColor: oneDarkBackground,
+    color: oneDarkStone,
     border: "none"
   },
 
   ".cm-activeLineGutter": {
-    backgroundColor: highlightBackground
+    oneDarkBackgroundColor: oneDarkHighlightBackground
   },
 
   ".cm-foldPlaceholder": {
-    backgroundColor: "transparent",
+    oneDarkBackgroundColor: "transparent",
     border: "none",
     color: "#ddd"
   },
 
   ".cm-tooltip": {
     border: "none",
-    backgroundColor: tooltipBackground
+    oneDarkBackgroundColor: oneDarkTooltipBackground
   },
   ".cm-tooltip .cm-tooltip-arrow:before": {
     borderTopColor: "transparent",
     borderBottomColor: "transparent"
   },
   ".cm-tooltip .cm-tooltip-arrow:after": {
-    borderTopColor: tooltipBackground,
-    borderBottomColor: tooltipBackground
+    borderTopColor: oneDarkTooltipBackground,
+    borderBottomColor: oneDarkTooltipBackground
   },
   ".cm-tooltip-autocomplete": {
     "& > ul > li[aria-selected]": {
-      backgroundColor: highlightBackground,
-      color: ivory
+      oneDarkBackgroundColor: oneDarkHighlightBackground,
+      color: oneDarkIvory
     }
   }
 }, {dark: true})
@@ -95,21 +95,21 @@ export const oneDarkTheme = EditorView.theme({
 /// The highlighting style for code in the One Dark theme.
 export const oneDarkHighlightStyle = HighlightStyle.define([
   {tag: t.keyword,
-   color: violet},
+   color: oneDarkViolet},
   {tag: [t.name, t.deleted, t.character, t.propertyName, t.macroName],
-   color: coral},
+   color: oneDarkCoral},
   {tag: [t.function(t.variableName), t.labelName],
-   color: malibu},
+   color: oneDarkMalibu},
   {tag: [t.color, t.constant(t.name), t.standard(t.name)],
-   color: whiskey},
+   color: oneDarkWhiskey},
   {tag: [t.definition(t.name), t.separator],
-   color: ivory},
+   color: oneDarkIvory},
   {tag: [t.typeName, t.className, t.number, t.changed, t.annotation, t.modifier, t.self, t.namespace],
-   color: chalky},
+   color: oneDarkChalky},
   {tag: [t.operator, t.operatorKeyword, t.url, t.escape, t.regexp, t.link, t.special(t.string)],
-   color: cyan},
+   color: oneDarkCyan},
   {tag: [t.meta, t.comment],
-   color: stone},
+   color: oneDarkStone},
   {tag: t.strong,
    fontWeight: "bold"},
   {tag: t.emphasis,
@@ -117,17 +117,17 @@ export const oneDarkHighlightStyle = HighlightStyle.define([
   {tag: t.strikethrough,
    textDecoration: "line-through"},
   {tag: t.link,
-   color: stone,
+   color: oneDarkStone,
    textDecoration: "underline"},
   {tag: t.heading,
    fontWeight: "bold",
-   color: coral},
+   color: oneDarkCoral},
   {tag: [t.atom, t.bool, t.special(t.variableName)],
-   color: whiskey },
+   color: oneDarkWhiskey },
   {tag: [t.processingInstruction, t.string, t.inserted],
-   color: sage},
+   color: oneDarkSage},
   {tag: t.invalid,
-   color: invalid},
+   color: oneDarkInvalid},
 ])
 
 /// Extension to enable the One Dark theme (both the editor theme and
