@@ -22,6 +22,26 @@ const chalky = "#e5c07b",
   selection = "#3E4451",
   cursor = "#528bff"
 
+/// The colors used in the theme, as CSS color strings.
+export const color = {
+  chalky,
+  coral,
+  cyan,
+  invalid,
+  ivory,
+  stone,
+  malibu,
+  sage,
+  whiskey,
+  violet,
+  darkBackground,
+  highlightBackground,
+  background,
+  tooltipBackground,
+  selection,
+  cursor
+}
+
 /// The editor theme styles for One Dark.
 export const oneDarkTheme = EditorView.theme({
   "&": {
