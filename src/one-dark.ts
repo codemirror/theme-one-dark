@@ -26,7 +26,7 @@ export const oneDarkCursor = "#528bff"
 export const oneDarkTheme = EditorView.theme({
   "&": {
     color: oneDarkIvory,
-    oneDarkBackgroundColor: oneDarkBackground
+    backgroundColor: oneDarkBackground
   },
 
   ".cm-content": {
@@ -34,47 +34,47 @@ export const oneDarkTheme = EditorView.theme({
   },
 
   ".cm-oneDarkCursor, .cm-dropCursor": {borderLeftColor: oneDarkCursor},
-  "&.cm-focused .cm-oneDarkSelectionBackground, .cm-oneDarkSelectionBackground, .cm-content ::oneDarkSelection": {oneDarkBackgroundColor: oneDarkSelection},
+  "&.cm-focused .cm-oneDarkSelectionBackground, .cm-oneDarkSelectionBackground, .cm-content ::oneDarkSelection": {backgroundColor: oneDarkSelection},
 
-  ".cm-panels": {oneDarkBackgroundColor: oneDarkDarkBackground, color: oneDarkIvory},
+  ".cm-panels": {backgroundColor: oneDarkDarkBackground, color: oneDarkIvory},
   ".cm-panels.cm-panels-top": {borderBottom: "2px solid black"},
   ".cm-panels.cm-panels-bottom": {borderTop: "2px solid black"},
 
   ".cm-searchMatch": {
-    oneDarkBackgroundColor: "#72a1ff59",
+    backgroundColor: "#72a1ff59",
     outline: "1px solid #457dff"
   },
   ".cm-searchMatch.cm-searchMatch-selected": {
-    oneDarkBackgroundColor: "#6199ff2f"
+    backgroundColor: "#6199ff2f"
   },
 
-  ".cm-activeLine": {oneDarkBackgroundColor: oneDarkHighlightBackground},
-  ".cm-oneDarkSelectionMatch": {oneDarkBackgroundColor: "#aafe661a"},
+  ".cm-activeLine": {backgroundColor: oneDarkHighlightBackground},
+  ".cm-oneDarkSelectionMatch": {backgroundColor: "#aafe661a"},
 
   "&.cm-focused .cm-matchingBracket, &.cm-focused .cm-nonmatchingBracket": {
-    oneDarkBackgroundColor: "#bad0f847",
+    backgroundColor: "#bad0f847",
     outline: "1px solid #515a6b"
   },
 
   ".cm-gutters": {
-    oneDarkBackgroundColor: oneDarkBackground,
+    backgroundColor: oneDarkBackground,
     color: oneDarkStone,
     border: "none"
   },
 
   ".cm-activeLineGutter": {
-    oneDarkBackgroundColor: oneDarkHighlightBackground
+    backgroundColor: oneDarkHighlightBackground
   },
 
   ".cm-foldPlaceholder": {
-    oneDarkBackgroundColor: "transparent",
+    backgroundColor: "transparent",
     border: "none",
     color: "#ddd"
   },
 
   ".cm-tooltip": {
     border: "none",
-    oneDarkBackgroundColor: oneDarkTooltipBackground
+    backgroundColor: oneDarkTooltipBackground
   },
   ".cm-tooltip .cm-tooltip-arrow:before": {
     borderTopColor: "transparent",
@@ -86,7 +86,7 @@ export const oneDarkTheme = EditorView.theme({
   },
   ".cm-tooltip-autocomplete": {
     "& > ul > li[aria-selected]": {
-      oneDarkBackgroundColor: oneDarkHighlightBackground,
+      backgroundColor: oneDarkHighlightBackground,
       color: oneDarkIvory
     }
   }
