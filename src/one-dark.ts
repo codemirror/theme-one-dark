@@ -68,7 +68,7 @@ export const oneDarkTheme = EditorView.theme({
     backgroundColor: "#6199ff2f"
   },
 
-  ".cm-activeLine": {backgroundColor: highlightBackground},
+  ".cm-activeLine": {backgroundColor: "#6699ff0b"},
   ".cm-selectionMatch": {backgroundColor: "#aafe661a"},
 
   "&.cm-focused .cm-matchingBracket, &.cm-focused .cm-nonmatchingBracket": {
