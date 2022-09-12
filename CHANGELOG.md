@@ -1,3 +1,9 @@
+## 6.1.0 (2022-09-12)
+
+### New features
+
+Export a `color` object holding the colors used in the theme.
+
 ## 6.0.0 (2022-06-08)
 
 ### Breaking changes
