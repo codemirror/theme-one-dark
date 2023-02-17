@@ -1,3 +1,9 @@
+## 6.1.1 (2023-02-17)
+
+### Bug fixes
+
+Remove the outline on matching brackets, because that could cover the native cursor on Chrome.
+
 ## 6.1.0 (2022-09-12)
 
 ### New features
