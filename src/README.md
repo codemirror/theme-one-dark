@@ -19,6 +19,19 @@ we have a [code of
 conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
+# Usage
+```bash
+npm install @codemirror/theme-one-dark
+```
+
+```js
+import { oneDark } from '@codemirror/theme-one-dark'
+
+const editor = new EditorView({
+  extensions: [oneDark]
+})
+```
+
 ## API Reference
 
 @oneDark
