@@ -1,3 +1,9 @@
+## 6.1.2 (2023-04-17)
+
+### Bug fixes
+
+Make sure the selection background styling overrides the base style rules.
+
 ## 6.1.1 (2023-02-17)
 
 ### Bug fixes
