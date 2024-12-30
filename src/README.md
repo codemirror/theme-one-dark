@@ -20,15 +20,15 @@ conduct](http://contributor-covenant.org/version/1/1/0/) that applies
 to communication around the project.
 
 # Usage
-```bash
-npm install @codemirror/theme-one-dark
-```
 
-```js
-import { oneDark } from '@codemirror/theme-one-dark'
+```javascript
+import {EditorView, basicSetup} from "codemirror"
+import {oneDark} from "@codemirror/theme-one-dark"
 
 const editor = new EditorView({
-  extensions: [oneDark]
+  parent: document.body,
+  doc: "One Dark Theme",
+  extensions: [basicSetup, oneDark]
 })
 ```
 
