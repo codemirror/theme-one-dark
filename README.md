@@ -1,3 +1,5 @@
+**This repository has moved to https://code.haverbeke.berlin/codemirror/theme-one-dark**
+
 <!-- NOTE: README.md is generated from src/README.md -->
 
 # @codemirror/theme-one-dark [![NPM version](https://img.shields.io/npm/v/@codemirror/theme-one-dark.svg)](https://www.npmjs.org/package/@codemirror/theme-one-dark)
